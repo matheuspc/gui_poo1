@@ -84,6 +84,7 @@ public class Cadastro extends JFrame {
 			}
 				else {
 					campoNome.setEnabled(false);
+					string nome = "ok";
 				}
 			}
 		});
@@ -123,11 +124,10 @@ public class Cadastro extends JFrame {
 		lblEspecifique.setBounds(10, 67, 92, 14);
 		contentPane.add(lblEspecifique);
 		
-		JComboBox comboBox_Specify_Aluno = new JComboBox();
-		comboBox_Specify_Aluno.setEnabled(false);
-		comboBox_Specify_Aluno.setModel(new DefaultComboBoxModel(new String[] {"Aluno Gradua\u00E7\u00E3o", "Aluno P\u00F3s - Gradua\u00E7\u00E3o"}));
-		comboBox_Specify_Aluno.setBounds(10, 89, 174, 20);
-		contentPane.add(comboBox_Specify_Aluno);
+		JComboBox specify_aluno = new JComboBox();
+		specify_aluno.setModel(new DefaultComboBoxModel(new String[] {"Aluno Gradua\u00E7\u00E3o", "Aluno P\u00F3s - Gradua\u00E7\u00E3o"}));
+		specify_aluno.setBounds(10, 89, 174, 20);
+		contentPane.add(specify_aluno);
 
 	}
 }
